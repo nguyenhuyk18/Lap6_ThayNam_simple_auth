@@ -1,26 +1,26 @@
 +CÂU A: 
 Truy cập vào URI /secure khi chưa đăng nhập và hiện ra kết quả trả ra là : Authentication required.
 
-<img src="https://raw.githubusercontent.com/nguyenhuyk18/Lap6_ThayNam_simple_auth/main/public/Picture1.png" alt="Văn bản thay thế" width="500" height="300">
+![Văn bản thay thế](https://raw.githubusercontent.com/nguyenhuyk18/Lap6_ThayNam_simple_auth/main/public/Picture1.png)
 
 
 
 Các bước đăng nhập 
 
-<img src="https://raw.githubusercontent.com/nguyenhuyk18/Lap6_ThayNam_simple_auth/main/public/Picture2.png" alt="Văn bản thay thế" width="500" height="300">
+![Văn bản thay thế](https://raw.githubusercontent.com/nguyenhuyk18/Lap6_ThayNam_simple_auth/main/public/Picture2.png)
 
 Vào mục Authorization chọn kiểu auth type là Basic Auth sau đó ấn send khi này kết quả trả ra từ URI “http://localhost:3000/secure” : You have accessed a protected resource 🎉
 
 
 +CÂU B:
 Truy cập vào URI /profile trước khi đăng nhập bằng POSTMAN kết quả trả về là : No cookie found 
-<img src="https://raw.githubusercontent.com/nguyenhuyk18/Lap6_ThayNam_simple_auth/main/public/Picture3.png" alt="Văn bản thay thế" width="500" height="300">
+![Văn bản thay thế](https://raw.githubusercontent.com/nguyenhuyk18/Lap6_ThayNam_simple_auth/main/public/Picture3.png)
 
 =>	Vì chưa đăng nhập nên truy cập vào không được (chưa có cookie gửi về server !!)
 
 Truy cập vào URI /login với phương thức post đồng thời ở body truyền vào thông tin đăng nhập ở dạng JSON ta thu được kết quả như sau: 
 
-<img src="https://raw.githubusercontent.com/nguyenhuyk18/Lap6_ThayNam_simple_auth/main/public/Picture4.png" alt="Văn bản thay thế" width="500" height="300">
+![Văn bản thay thế](https://raw.githubusercontent.com/nguyenhuyk18/Lap6_ThayNam_simple_auth/main/public/Picture4.png)
 
 =>	Trả về cookie
 =>	Trả về kết quả Logged in !!!
@@ -30,4 +30,4 @@ Truy cập vào URI /login với phương thức post đồng thời ở body tr
 
 
 Đây là thông tin đăng nhập session được lưu trong MongoDB!
-<img src="https://raw.githubusercontent.com/nguyenhuyk18/Lap6_ThayNam_simple_auth/main/public/Picture5.png" alt="Văn bản thay thế" width="500" height="300">
+![Văn bản thay thế](https://raw.githubusercontent.com/nguyenhuyk18/Lap6_ThayNam_simple_auth/main/public/Picture5.png)
