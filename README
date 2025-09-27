@@ -3,13 +3,13 @@
 ## CÂU A
 Truy cập vào URI `/secure` khi chưa đăng nhập và hiện ra kết quả trả ra là: **Authentication required**.
 
-![Màn hình Authentication required](https://github.com/nguyenhuyk18/Lap6_ThayNam_simple_auth/blob/main/public/Picture1.png?raw=true)
+![Màn hình Authentication required](public/Picture1.png)
 
 ---
 
 ### Các bước đăng nhập:
 
-![Basic Auth](https://github.com/nguyenhuyk18/Lap6_ThayNam_simple_auth/blob/main/public/Picture2.png?raw=true)
+![Basic Auth](public/Picture2.png)
 
 Vào mục **Authorization** chọn kiểu auth type là **Basic Auth** sau đó ấn **Send**.  
 Kết quả trả ra từ URI `http://localhost:3000/secure` là:  
@@ -20,7 +20,7 @@ Kết quả trả ra từ URI `http://localhost:3000/secure` là:
 ## CÂU B
 Truy cập vào URI `/profile` trước khi đăng nhập bằng POSTMAN, kết quả trả về là: **No cookie found**.
 
-![No cookie found](https://github.com/nguyenhuyk18/Lap6_ThayNam_simple_auth/blob/main/public/Picture3.png?raw=true)
+![No cookie found](public/Picture3.png)
 
 *Lưu ý: Vì chưa đăng nhập nên truy cập vào không được (chưa có cookie gửi về server !!).*
 
@@ -29,7 +29,7 @@ Truy cập vào URI `/profile` trước khi đăng nhập bằng POSTMAN, kết 
 ### Đăng nhập với POST /login
 Truy cập vào URI `/login` với phương thức **POST**, truyền thông tin đăng nhập ở dạng **JSON trong body**, ta thu được kết quả:
 
-![Login thành công](https://github.com/nguyenhuyk18/Lap6_ThayNam_simple_auth/blob/main/public/Picture4.png?raw=true)
+![Login thành công](public/Picture4.png)
 
 - Kết quả: Trả về **cookie**  
 - Kết quả: Trả về thông báo **"Logged in !!!"**
@@ -40,4 +40,4 @@ Truy cập vào URI `/login` với phương thức **POST**, truyền thông tin
 
 Đây là thông tin đăng nhập session được lưu trong MongoDB:
 
-![Session trong MongoDB](https://github.com/nguyenhuyk18/Lap6_ThayNam_simple_auth/blob/main/public/Picture5.png?raw=true)
+![Session trong MongoDB](public/Picture5.png)
