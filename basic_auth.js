@@ -9,6 +9,9 @@ const PASSWORD = "12345";
 // Middleware for basic authentication
 function basicAuth(req, res, next) {
   const authHeader = req.headers["authorization"];
+
+  // console.log(authHeader)
+
   if (!authHeader) {
     res.setHeader("WWW-Authenticate", 'Basic realm="Secure Area"');
     return res.status(401).send("Authentication required.");

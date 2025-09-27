@@ -24,7 +24,7 @@ const cookieSchema = new mongoose.Schema({
 const Cookie = mongoose.model("Cookie", cookieSchema);
 
 // Dummy User (for demo)
-const USERS = [{ id: "1", username: "admin", password: "12345", rolename:"adsys"}];
+const USERS = [{ id: "1", username: "admin", password: "12345", rolename: "adsys" }];
 
 // --- Routes ---
 // Login → set cookie

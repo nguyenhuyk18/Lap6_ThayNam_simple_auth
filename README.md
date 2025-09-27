@@ -40,6 +40,11 @@ Kết quả trả về:
 - Trả về **cookie**  
 - Trả về thông báo: **"Logged in !!!"**
 
+Khi này ta truy cập vào URI `/profile` với phương thức **GET**, cookie sẽ được tự động gửi đến server với mã cookie_token đã được random
+
+![Has Valid Cookie](images/image.png)
+
+
 ---
 
 ### Session lưu trong MongoDB
