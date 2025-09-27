@@ -1,43 +1,49 @@
 # Lap6 Simple Auth Demo
 
 ## CÂU A
-Truy cập vào URI `/secure` khi chưa đăng nhập và hiện ra kết quả trả ra là: **Authentication required**.
 
-![Authentication required](./public/Picture1.png)
+Truy cập vào URI `/secure` khi chưa đăng nhập, kết quả trả về:  
+**Authentication required**.
+
+![Authentication required](images/Picture1.png)
 
 ---
 
-### Các bước đăng nhập:
+### Các bước đăng nhập
 
-![Basic Auth](./public/Picture2.png)
+![Basic Auth](images/Picture2.png)
 
-Vào mục **Authorization** chọn kiểu auth type là **Basic Auth** sau đó ấn **Send**.  
-Kết quả trả ra từ URI `http://localhost:3000/secure` là:  
+Vào mục **Authorization**, chọn kiểu Auth type là **Basic Auth**, sau đó ấn **Send**.  
+Kết quả trả về từ URI `http://localhost:3000/secure`:  
 **"You have accessed a protected resource" 🎉**
 
 ---
 
 ## CÂU B
-Truy cập vào URI `/profile` trước khi đăng nhập bằng POSTMAN, kết quả trả về là: **No cookie found**.
 
-![No cookie found](./public/Picture3.png)
+Truy cập vào URI `/profile` trước khi đăng nhập bằng POSTMAN, kết quả trả về:  
+**No cookie found**.
 
-*Lưu ý: Vì chưa đăng nhập nên truy cập vào không được (chưa có cookie gửi về server !!).*
+![No cookie found](images/Picture3.png)
+
+*Lưu ý: Vì chưa đăng nhập nên không truy cập được (chưa có cookie gửi về server).*
 
 ---
 
-### Đăng nhập với POST /login
-Truy cập vào URI `/login` với phương thức **POST**, truyền thông tin đăng nhập ở dạng **JSON trong body**, ta thu được kết quả:
+### Đăng nhập với POST `/login`
 
-![Login thành công](./public/Picture4.png)
+Truy cập vào URI `/login` với phương thức **POST**, truyền thông tin đăng nhập dạng **JSON** trong body.  
+Kết quả trả về:
 
-- Kết quả: Trả về **cookie**  
-- Kết quả: Trả về thông báo **"Logged in !!!"**
+![Login thành công](images/Picture4.png)
+
+- Trả về **cookie**  
+- Trả về thông báo: **"Logged in !!!"**
 
 ---
 
 ### Session lưu trong MongoDB
 
-Đây là thông tin đăng nhập session được lưu trong MongoDB:
+Thông tin đăng nhập session được lưu trong MongoDB:
 
-![Session trong MongoDB](./public/Picture5.png)
+![Session trong MongoDB](images/Picture5.png)
