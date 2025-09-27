@@ -1,3 +1,5 @@
+# Lap6 Simple Auth Demo
+
 +CÂU A: 
 Truy cập vào URI /secure khi chưa đăng nhập và hiện ra kết quả trả ra là : Authentication required.
 
@@ -5,28 +7,30 @@ Truy cập vào URI /secure khi chưa đăng nhập và hiện ra kết quả tr
 
 ---
 
-Các bước đăng nhập 
+Các bước đăng nhập:
 
 ![Basic Auth](https://raw.githubusercontent.com/nguyenhuyk18/Lap6_ThayNam_simple_auth/main/public/Picture2.png)
 
-Vào mục Authorization chọn kiểu auth type là Basic Auth sau đó ấn send khi này kết quả trả ra từ URI “http://localhost:3000/secure” : You have accessed a protected resource 🎉
+Vào mục Authorization chọn kiểu auth type là Basic Auth sau đó ấn send. Kết quả trả ra từ URI “http://localhost:3000/secure” là: "You have accessed a protected resource" 🎉
 
 ---
 
 +CÂU B:
-Truy cập vào URI /profile trước khi đăng nhập bằng POSTMAN kết quả trả về là : No cookie found 
+Truy cập vào URI /profile trước khi đăng nhập bằng POSTMAN kết quả trả về là : No cookie found.
+
 ![No cookie found](https://raw.githubusercontent.com/nguyenhuyk18/Lap6_ThayNam_simple_auth/main/public/Picture3.png)
 
-=> Vì chưa đăng nhập nên truy cập vào không được (chưa có cookie gửi về server !!)
+*Lưu ý: Vì chưa đăng nhập nên truy cập vào không được (chưa có cookie gửi về server !!)
 
-Truy cập vào URI /login với phương thức post đồng thời ở body truyền vào thông tin đăng nhập ở dạng JSON ta thu được kết quả như sau: 
+Truy cập vào URI /login với phương thức POST, truyền thông tin đăng nhập ở dạng JSON trong body, ta thu được kết quả như sau: 
 
 ![Login thành công](https://raw.githubusercontent.com/nguyenhuyk18/Lap6_ThayNam_simple_auth/main/public/Picture4.png)
 
-=> Trả về cookie
-=> Trả về kết quả Logged in !!!
+* Kết quả: Trả về cookie
+* Kết quả: Trả về thông báo "Logged in !!!"
 
 ---
 
-Đây là thông tin đăng nhập session được lưu trong MongoDB!
+Đây là thông tin đăng nhập session được lưu trong MongoDB:
+
 ![Session trong MongoDB](https://raw.githubusercontent.com/nguyenhuyk18/Lap6_ThayNam_simple_auth/main/public/Picture5.png)
