@@ -3,13 +3,13 @@
 +CÂU A: 
 Truy cập vào URI /secure khi chưa đăng nhập và hiện ra kết quả trả ra là : Authentication required.
 
-![Màn hình Authentication required](https://raw.githubusercontent.com/nguyenhuyk18/Lap6_ThayNam_simple_auth/main/public/Picture1.png)
+![Màn hình Authentication required](https://raw.githubusercontent.com/nguyenhuyk18/Lap6_ThayNam_simple_auth/main/public/Picture1.png?raw=true)
 
 ---
 
 Các bước đăng nhập:
 
-![Basic Auth](https://raw.githubusercontent.com/nguyenhuyk18/Lap6_ThayNam_simple_auth/main/public/Picture2.png)
+![Basic Auth](https://raw.githubusercontent.com/nguyenhuyk18/Lap6_ThayNam_simple_auth/main/public/Picture2.png?raw=true)
 
 Vào mục Authorization chọn kiểu auth type là Basic Auth sau đó ấn send. Kết quả trả ra từ URI “http://localhost:3000/secure” là: "You have accessed a protected resource" 🎉
 
@@ -18,13 +18,13 @@ Vào mục Authorization chọn kiểu auth type là Basic Auth sau đó ấn se
 +CÂU B:
 Truy cập vào URI /profile trước khi đăng nhập bằng POSTMAN kết quả trả về là : No cookie found.
 
-![No cookie found](https://raw.githubusercontent.com/nguyenhuyk18/Lap6_ThayNam_simple_auth/main/public/Picture3.png)
+![No cookie found](https://raw.githubusercontent.com/nguyenhuyk18/Lap6_ThayNam_simple_auth/main/public/Picture3.png?raw=true)
 
 *Lưu ý: Vì chưa đăng nhập nên truy cập vào không được (chưa có cookie gửi về server !!)
 
 Truy cập vào URI /login với phương thức POST, truyền thông tin đăng nhập ở dạng JSON trong body, ta thu được kết quả như sau: 
 
-![Login thành công](https://raw.githubusercontent.com/nguyenhuyk18/Lap6_ThayNam_simple_auth/main/public/Picture4.png)
+![Login thành công](https://raw.githubusercontent.com/nguyenhuyk18/Lap6_ThayNam_simple_auth/main/public/Picture4.png?raw=true)
 
 * Kết quả: Trả về cookie
 * Kết quả: Trả về thông báo "Logged in !!!"
@@ -33,4 +33,4 @@ Truy cập vào URI /login với phương thức POST, truyền thông tin đăn
 
 Đây là thông tin đăng nhập session được lưu trong MongoDB:
 
-![Session trong MongoDB](https://raw.githubusercontent.com/nguyenhuyk18/Lap6_ThayNam_simple_auth/main/public/Picture5.png)
+![Session trong MongoDB](https://raw.githubusercontent.com/nguyenhuyk18/Lap6_ThayNam_simple_auth/main/public/Picture5.png?raw=true)
